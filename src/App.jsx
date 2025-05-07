@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen w-screen bg-black text-white font-sans overflow-x-hidden">
+    <div className="min-h-screen w-full bg-black text-white font-sans">
       {/* Header - full width */}
       <header className="w-screen p-4 flex justify-between items-center bg-black sticky top-0 z-10 border-b border-gray-700 shadow-[0_12px_32px_0_rgba(0,0,0,0.7)]" data-aos="fade-down">
         <div className="w-full flex justify-between items-center px-4 xl:px-16">
