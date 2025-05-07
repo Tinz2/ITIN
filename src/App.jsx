@@ -239,16 +239,16 @@ function App() {
         <div>
           <EducationSection />
         </div>
-        <div ref={aboutRef} className="min-h-screen flex items-center justify-center">
+        <div>
           <AboutSection />
         </div>
-        <div ref={projectRef} className="min-h-screen flex items-center justify-center">
+        <div>
           <SkillsWorks />
         </div>
-        <div className="min-h-screen flex items-center justify-center">
+        <div>
           <ToolsSection />
         </div>
-        <div className="min-h-screen flex items-center justify-center">
+        <div>
           <ContactForm />
         </div>
         <div>
