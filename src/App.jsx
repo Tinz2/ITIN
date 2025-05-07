@@ -39,9 +39,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-black text-white font-sans">
+    <div className="min-h-screen w-full bg-black text-white font-sans overflow-y-hidden">
       {/* Header - full width */}
-      <header className="w-screen p-4 flex justify-between items-center bg-black sticky top-0 z-10 border-b border-gray-700 shadow-[0_12px_32px_0_rgba(0,0,0,0.7)]" data-aos="fade-down">
+      <header className="w-full p-4 flex justify-between items-center bg-black sticky top-0 z-10 border-b border-gray-700 shadow-[0_12px_32px_0_rgba(0,0,0,0.7)]" data-aos="fade-down">
         <div className="w-full flex justify-between items-center px-4 xl:px-16">
           <h1 className="text-2xl font-extrabold text-white tracking-wider drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]">
             ITIN
@@ -104,7 +104,7 @@ function App() {
       </div>
 
       {/* Main content */}
-      <main className="w-screen min-h-[calc(100vh-80px)] flex flex-col items-center px-4 py-10" data-aos="fade-up">
+      <main className="w-full min-h-[calc(100vh-80px)] flex flex-col items-center px-4 py-10" data-aos="fade-up">
         <div className="w-full flex flex-col items-center px-4 xl:px-16">
 
           {/* Junior Developer heading with glow effect */}
@@ -239,17 +239,16 @@ function App() {
         <div>
           <EducationSection />
         </div>
-        <div ref={aboutRef}>
+        <div ref={aboutRef} className="min-h-screen flex items-center justify-center">
           <AboutSection />
         </div>
-        <div ref={projectRef} className="App">
+        <div ref={projectRef} className="min-h-screen flex items-center justify-center">
           <SkillsWorks />
         </div>
-       
-        <div>
+        <div className="min-h-screen flex items-center justify-center">
           <ToolsSection />
         </div>
-        <div>
+        <div className="min-h-screen flex items-center justify-center">
           <ContactForm />
         </div>
         <div>
